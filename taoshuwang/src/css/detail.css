@@ -1,0 +1,420 @@
+@charset "UTF-8";
+#main {
+  min-height: 900px;
+  overflow: hidden; }
+
+/* 您的位置块 */
+#main #main_book_ars {
+  padding-top: 13px;
+  padding-bottom: 26px;
+  height: 18px; }
+  #main #main_book_ars p {
+    padding-left: 15px;
+    font-size: 15px; }
+
+/* 左部广告内容栏 */
+#main_left_adv {
+  width: 220px;
+  height: 500px;
+  padding-right: 80px;
+  float: left; }
+  #main_left_adv #tuijian {
+    height: 329px;
+    overflow: hidden;
+    border: 1px solid #d8d8d8; }
+    #main_left_adv #tuijian h1 {
+      height: 30px;
+      padding-left: 13px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #333333;
+      line-height: 30px;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #d8d8d8; }
+    #main_left_adv #tuijian .tuijian_list {
+      padding-right: 8px;
+      padding-top: 10px;
+      padding-left: 18px; }
+      #main_left_adv #tuijian .tuijian_list li {
+        overflow: hidden;
+        margin-bottom: 10px;
+        position: relative; }
+      #main_left_adv #tuijian .tuijian_list strong {
+        display: block;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        text-align: center;
+        border-radius: 2px;
+        background-color: #566e5e;
+        color: white;
+        float: left;
+        margin-right: 4px;
+        position: absolute;
+        z-index: 2; }
+      #main_left_adv #tuijian .tuijian_list .ccc {
+        background-color: #cccccc; }
+      #main_left_adv #tuijian .tuijian_list .first_show {
+        height: 16px;
+        float: left;
+        line-height: 16px;
+        margin-bottom: 15px;
+        padding-left: 20px; }
+        #main_left_adv #tuijian .tuijian_list .first_show span {
+          font-size: 13px;
+          color: #757575; }
+      #main_left_adv #tuijian .tuijian_list .than_show {
+        display: none;
+        overflow: hidden;
+        padding-bottom: 10px;
+        border-bottom: 1px dotted #eaeaea;
+        padding-left: 15px; }
+        #main_left_adv #tuijian .tuijian_list .than_show .img_lianjie {
+          display: block;
+          float: left; }
+        #main_left_adv #tuijian .tuijian_list .than_show .title_lianjie {
+          width: 115px;
+          display: block;
+          float: left;
+          font-size: 14px;
+          color: #757575; }
+          #main_left_adv #tuijian .tuijian_list .than_show .title_lianjie:hover {
+            color: red;
+            text-decoration: underline; }
+        #main_left_adv #tuijian .tuijian_list .than_show .rprice {
+          display: block;
+          float: left;
+          color: red;
+          font-size: 12px;
+          margin-right: 10px; }
+        #main_left_adv #tuijian .tuijian_list .than_show .gprice {
+          display: block;
+          float: left;
+          color: #757575;
+          font-size: 10px; }
+  #main_left_adv #three_ads {
+    width: 100%;
+    padding-top: 5px; }
+    #main_left_adv #three_ads img {
+      margin-bottom: 3px; }
+
+/* 书本参数块 */
+#main_book_inf {
+  width: 900px;
+  height: 520px;
+  float: left; }
+  #main_book_inf .main_book_title {
+    height: 29px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 18px;
+    border-bottom: 1px dotted #d8d8d8; }
+  #main_book_inf .main_left_box {
+    float: left;
+    width: 223px;
+    height: 410px;
+    padding: 35px 17px 0px; }
+    #main_book_inf .main_left_box .main_imgbox {
+      width: 221px;
+      height: 218px;
+      border: 1px solid #d8d8d8;
+      text-align: center;
+      line-height: 218px; }
+    #main_book_inf .main_left_box .sell {
+      width: 204px;
+      height: 31px;
+      margin: 0 auto;
+      line-height: 31px;
+      font-size: 12px;
+      color: #666666;
+      border-bottom: 1px dotted #d8d8d8; }
+      #main_book_inf .main_left_box .sell .sellnum {
+        color: red;
+        font-weight: 600; }
+    #main_book_inf .main_left_box .weixin {
+      width: 100%;
+      padding-top: 15px;
+      text-align: center; }
+  #main_book_inf .main_right_box {
+    float: right;
+    width: 643px;
+    height: 430px;
+    padding-top: 15px; }
+    #main_book_inf .main_right_box p {
+      font-size: 13px;
+      height: 25px;
+      padding-bottom: 5px;
+      line-height: 25px; }
+    #main_book_inf .main_right_box #newprice {
+      color: red;
+      font-size: 18px;
+      font-weight: 700; }
+    #main_book_inf .main_right_box .main_vip a {
+      color: red; }
+    #main_book_inf .main_right_box .main_old_price .dcolor {
+      display: inline;
+      width: 66px;
+      color: #666666;
+      margin-left: 10px; }
+    #main_book_inf .main_right_box .main_old_price #discount {
+      color: red; }
+    #main_book_inf .main_right_box .main_old_price .scolor {
+      color: #666666;
+      margin-left: 10px; }
+    #main_book_inf .main_right_box .main_old_price #save {
+      color: #666666; }
+    #main_book_inf .main_right_box .main_ku #stock {
+      color: #666666;
+      font-weight: 700;
+      font-size: 14px; }
+    #main_book_inf .main_right_box .main_yunfei {
+      width: 500px;
+      border-bottom: 1px solid #ededed;
+      margin-bottom: 8px; }
+    #main_book_inf .main_right_box .main_yunfei .mudi {
+      color: #546f60;
+      padding-right: 10px;
+      margin-right: 20px;
+      background: url("../img/mudi.jpg") no-repeat right 0px bottom 2px; }
+    #main_book_inf .main_right_box .main_yunfei .ycolor {
+      color: red; }
+    #main_book_inf .main_right_box .main_authors .author {
+      font-size: 14px;
+      color: #666666; }
+    #main_book_inf .main_right_box .main_chubanshe .publishing {
+      font-size: 14px;
+      color: #666666; }
+    #main_book_inf .main_right_box .main_banshi {
+      width: 462px;
+      height: 50px; }
+      #main_book_inf .main_right_box .main_banshi li {
+        width: 154px;
+        float: left;
+        padding: 3px 0px;
+        font-size: 12px; }
+    #main_book_inf .main_right_box .main_buy_box {
+      width: 365px;
+      height: 120px;
+      border: 1px solid #e5e5e5;
+      background-color: #f8f8f8; }
+      #main_book_inf .main_right_box .main_buy_box:hover {
+        background-color: #fff3d9; }
+      #main_book_inf .main_right_box .main_buy_box .main_buy_num {
+        width: 355px;
+        height: 45px;
+        padding-top: 20px;
+        padding-left: 10px;
+        font-size: 13px; }
+        #main_book_inf .main_right_box .main_buy_box .main_buy_num .booknum {
+          width: 32px;
+          height: 21px;
+          padding-left: 2px;
+          margin: 0px 3px;
+          border: 1px solid #666666;
+          line-height: 21px; }
+      #main_book_inf .main_right_box .main_buy_box .main_btn_box {
+        width: 355px;
+        height: 55px;
+        padding-left: 10px; }
+        #main_book_inf .main_right_box .main_buy_box .main_btn_box li {
+          float: left;
+          width: 130px;
+          height: 34px;
+          margin-right: 39px; }
+          #main_book_inf .main_right_box .main_buy_box .main_btn_box li input {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 34px;
+            color: white;
+            font-size: 19px;
+            border-radius: 3px; }
+          #main_book_inf .main_right_box .main_buy_box .main_btn_box li .pay {
+            background-color: #e08459; }
+          #main_book_inf .main_right_box .main_buy_box .main_btn_box li .collect {
+            background-color: #c6c49b;
+            background-image: url("../img/shoucang.jpg");
+            background-repeat: no-repeat;
+            background-position: 3px 5px; }
+  #main_book_inf .main_baidu_share {
+    float: left;
+    height: 45px; }
+    #main_book_inf .main_baidu_share .shareto {
+      font-size: 12px; }
+
+/* main书评 */
+#main_book_tab {
+  width: 850px;
+  min-height: 185px;
+  float: right; }
+  #main_book_tab .tabbox {
+    width: 100%;
+    height: 29px;
+    border-bottom: 3px solid #a6a482; }
+    #main_book_tab .tabbox .g {
+      background-color: #bdba95; }
+    #main_book_tab .tabbox li {
+      float: left;
+      height: 29px;
+      line-height: 29px;
+      margin-right: 3px;
+      padding-left: 25px;
+      padding-right: 23px;
+      background-color: #e9e9e9;
+      border-radius: 5px 5px 0px 0px;
+      cursor: pointer; }
+      #main_book_tab .tabbox li a {
+        font-size: 13px;
+        color: #333; }
+        #main_book_tab .tabbox li a:hover {
+          color: red;
+          text-decoration: underline; }
+      #main_book_tab .tabbox li span {
+        color: red; }
+      #main_book_tab .tabbox li .w15 {
+        color: white;
+        font-size: 15px;
+        font-weight: 600; }
+        #main_book_tab .tabbox li .w15:hover {
+          color: white;
+          text-decoration: none; }
+  #main_book_tab .show {
+    display: block; }
+  #main_book_tab .tabs .bf88 {
+    height: 30px;
+    padding-left: 18px;
+    margin-top: 10px;
+    line-height: 30px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    font-weight: bold; }
+  #main_book_tab .padding_all {
+    padding: 15px 15px 10px 18px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #333; }
+
+/* 细节，选择器权重影响类名切换效果 */
+#tabs1 {
+  width: 100%;
+  min-height: 100px;
+  width: 100%;
+  display: none; }
+
+#tabs2 {
+  width: 100%;
+  min-height: 100px;
+  display: none; }
+
+#tabs3 {
+  min-height: 100px;
+  display: none; }
+
+/* 商品评论样式 */
+.reviews_box {
+  width: 100%;
+  overflow: hidden; }
+  .reviews_box .taoping {
+    width: 848px;
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    background-color: #f3f3f3;
+    padding-top: 7px;
+    overflow: hidden; }
+    .reviews_box .taoping li {
+      float: left; }
+    .reviews_box .taoping li:nth-child(1) {
+      width: 12px;
+      height: 33px;
+      border-bottom: 1px solid #d6d6d6; }
+    .reviews_box .taoping li:nth-child(2) {
+      width: 128px;
+      height: 33px;
+      border: 1px solid #d6d6d6;
+      border-bottom: none;
+      text-align: center;
+      line-height: 33px;
+      font-size: 13px;
+      font-weight: bold;
+      background-color: white; }
+    .reviews_box .taoping li:nth-child(3) {
+      width: 706px;
+      height: 33px;
+      border-bottom: 1px solid #d6d6d6; }
+  .reviews_box .pinglun_con {
+    width: 100%; }
+    .reviews_box .pinglun_con li {
+      width: 100%; }
+  .reviews_box .pinglun_btn_box {
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    overflow: hidden; }
+    .reviews_box .pinglun_btn_box .nothing {
+      width: 109px;
+      height: 100%;
+      font-size: 14px;
+      text-align: center;
+      float: left; }
+    .reviews_box .pinglun_btn_box #pinglun_btn {
+      width: 95px;
+      height: 21px;
+      margin-top: 29px;
+      margin-right: 20px;
+      font-size: 12px;
+      line-height: 21px;
+      text-align: center;
+      border: 1px solid #ccc;
+      float: right;
+      cursor: pointer;
+      border-radius: 4px; }
+
+.baaa {
+  padding-left: 10px;
+  margin-top: 10px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #aaa885;
+  border-radius: 3px 3px 0px 0px; }
+
+.und {
+  height: 0;
+  margin-top: 2px;
+  border-top: 2px solid #a3a180; }
+
+/* 商品问答样式 */
+.commodity_qa {
+  width: 100%;
+  overflow: hidden; }
+  .commodity_qa .tiwen_con {
+    width: 100%; }
+    .commodity_qa .tiwen_con li {
+      width: 100%; }
+  .commodity_qa .tiwen_btn_box {
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    overflow: hidden; }
+    .commodity_qa .tiwen_btn_box .nothing {
+      width: 109px;
+      height: 100%;
+      font-size: 14px;
+      text-align: center;
+      float: left; }
+    .commodity_qa .tiwen_btn_box #tiwen_btn {
+      width: 95px;
+      height: 21px;
+      margin-top: 29px;
+      margin-right: 20px;
+      font-size: 12px;
+      line-height: 21px;
+      text-align: center;
+      border: 1px solid #ccc;
+      float: right;
+      cursor: pointer;
+      border-radius: 4px; }
+
+/*# sourceMappingURL=detail.css.map */

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* 放大镜效果样式 */
+img {
+  vertical-align: top;
+  border: 0; }
+
+#MagnifierWrap {
+  position: relative;
+  width: 100%;
+  height: 209px;
+  margin-top: 9px; }
+
+.MagnifierMain {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.MagnifierMain img {
+  width: 100%;
+  height: 100%; }
+
+.MagnifierDrag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ccc;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  cursor: move; }
+
+.MagnifierPop {
+  position: absolute;
+  top: 0;
+  overflow: hidden; }
+
+.MagnifierImg {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/*# sourceMappingURL=zoom.css.map */

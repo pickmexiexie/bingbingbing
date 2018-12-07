@@ -1,0 +1,524 @@
+@charset "UTF-8";
+#header, #main, #footer {
+  width: 100%; }
+
+/*头部的导航栏，登录，注册等等*/
+#header {
+  background-color: #fafafa;
+  border-bottom: 1px solid #e0e0e0; }
+  #header .h_nav {
+    height: 22px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 12px; }
+    #header .h_nav .h_aishu {
+      width: 244px;
+      height: 22px;
+      line-height: 22px; }
+      #header .h_nav .h_aishu .h_plog, #header .h_nav .h_aishu .h_freg {
+        margin-right: 8px;
+        color: #666; }
+      #header .h_nav .h_aishu a:hover {
+        color: red;
+        text-decoration: underline; }
+    #header .h_nav .h_select {
+      float: right; }
+      #header .h_nav .h_select li {
+        float: left;
+        height: 22px;
+        line-height: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: url("../img/vbor.jpg") no-repeat;
+        background-position: right 5px; }
+        #header .h_nav .h_select li a {
+          color: #666; }
+        #header .h_nav .h_select li em {
+          font-size: 15px;
+          color: red; }
+      #header .h_nav .h_select li:nth-child(2), #header .h_nav .h_select li:nth-child(3), #header .h_nav .h_select li:nth-child(7) {
+        background-image: none; }
+      #header .h_nav .h_select li:nth-child(3) {
+        padding: 0; }
+      #header .h_nav .h_select .h_taoshu {
+        padding: 0;
+        position: relative; }
+        #header .h_nav .h_select .h_taoshu .h_meu {
+          padding-left: 10px;
+          padding-right: 22px;
+          position: relative;
+          z-index: 1002; }
+          #header .h_nav .h_select .h_taoshu .h_meu b {
+            width: 0px;
+            height: 0px;
+            display: inline-block;
+            position: absolute;
+            border: 4px solid transparent;
+            border-top: 4px solid gray;
+            top: 10px;
+            right: 10px;
+            transition: all 0.2s linear; }
+        #header .h_nav .h_select .h_taoshu .h_con {
+          width: 48px;
+          height: 50px;
+          padding: 22px 22px 0 13px;
+          z-index: 1001;
+          position: absolute;
+          top: 2px;
+          left: -3px;
+          background-color: white; }
+          #header .h_nav .h_select .h_taoshu .h_con a {
+            display: inline-block;
+            float: left; }
+          #header .h_nav .h_select .h_taoshu .h_con a:hover {
+            color: red;
+            text-decoration: underline; }
+      #header .h_nav .h_select .h_taoshu:hover .h_con {
+        display: block;
+        border: 1px solid #d8d8d8; }
+      #header .h_nav .h_select .h_taoshu:hover b {
+        transform: rotate(180deg);
+        transition: all 0.2s linear;
+        transform-origin: center top; }
+      #header .h_nav .h_select .h_cart {
+        display: inline-block;
+        width: 70px;
+        height: 18px;
+        margin-top: 2px;
+        line-height: 17px;
+        padding: 0px 6px 0px 25px;
+        border: 1px solid #d8d8d8;
+        position: relative; }
+        #header .h_nav .h_select .h_cart i {
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          position: absolute;
+          background: url("../img/carimg.jpg") no-repeat;
+          top: 2px;
+          left: 3px; }
+        #header .h_nav .h_select .h_cart .h_cartcount {
+          color: red;
+          font-weight: 700; }
+      #header .h_nav .h_select a:hover {
+        color: red;
+        text-decoration: underline; }
+
+/* main 部分 */
+/* 搜索块search */
+#main #search {
+  padding-top: 15px;
+  height: 77px;
+  position: relative; }
+  #main #search .logo {
+    float: left;
+    width: 301px;
+    position: relative; }
+  #main #search .search_bg {
+    width: 562px;
+    height: 25px;
+    float: left;
+    position: absolute;
+    right: 73px;
+    top: 20px;
+    background-color: #efefef;
+    border: 1px solid #dddddd;
+    padding: 2px; }
+    #main #search .search_bg .search_content {
+      width: 461px;
+      height: 23px;
+      border: 1px solid #abb1b1;
+      border-right: none;
+      background-color: #ffffff;
+      border-radius: 3px;
+      float: left; }
+      #main #search .search_bg .search_content .search_tip {
+        width: 132px;
+        height: 23px;
+        position: absolute;
+        left: 6px;
+        padding-left: 20px;
+        background: url("../img/search.jpg") no-repeat 5px 5px;
+        color: #b8b8b8;
+        font-size: 13px;
+        line-height: 23px; }
+      #main #search .search_bg .search_content #search_inf {
+        width: 280px;
+        height: 17px;
+        padding: 3px 0px;
+        position: absolute;
+        left: 6px;
+        background-color: transparent; }
+      #main #search .search_bg .search_content #search_list {
+        width: 390px;
+        padding-left: 8px;
+        color: gray;
+        display: none;
+        border: 1px solid #abb1b1;
+        border-top: none;
+        background-color: white;
+        position: absolute;
+        top: 26px;
+        font-size: 14px;
+        z-index: 2; }
+      #main #search .search_bg .search_content .search_all {
+        min-width: 110px;
+        min-height: 23px;
+        position: absolute;
+        border-left: 1px solid #e1e1e1;
+        right: 104px; }
+        #main #search .search_bg .search_content .search_all .pl {
+          width: 58px;
+          height: 23px;
+          font-size: 13px;
+          line-height: 23px;
+          position: absolute;
+          right: 40px; }
+        #main #search .search_bg .search_content .search_all .wh {
+          width: 13px;
+          height: 13px;
+          border: 1px solid #d3d3d3;
+          position: absolute;
+          right: 2px;
+          top: 5px; }
+          #main #search .search_bg .search_content .search_all .wh .jiantou {
+            display: inline-block;
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            left: 2px;
+            top: 4px;
+            border: 5px solid transparent;
+            border-top: 5px solid #c7744f; }
+        #main #search .search_bg .search_content .search_all .search_kind {
+          width: 140px;
+          border: 1px solid #e1e1e1;
+          border-top: none;
+          padding: 0px 8px;
+          margin-top: 22px;
+          display: none;
+          background-color: white;
+          font-size: 13px;
+          position: relative;
+          z-index: 3; }
+          #main #search .search_bg .search_content .search_all .search_kind h1 {
+            width: 120px;
+            padding: 3px 10px 3px;
+            font-size: 12px;
+            font-weight: 700;
+            border-top: 1px solid #efefef;
+            margin-bottom: 5px; }
+          #main #search .search_bg .search_content .search_all .search_kind ul {
+            width: 100%;
+            height: 120px; }
+            #main #search .search_bg .search_content .search_all .search_kind ul li {
+              padding-left: 20px;
+              line-height: 22px;
+              font-size: 12px; }
+              #main #search .search_bg .search_content .search_all .search_kind ul li b {
+                display: inline-block;
+                padding-right: 10px;
+                opacity: 0;
+                color: #d54d40; }
+            #main #search .search_bg .search_content .search_all .search_kind ul .cs:hover {
+              background-color: #d54d40;
+              color: white;
+              cursor: pointer; }
+    #main #search .search_bg .search_btn {
+      width: 100px;
+      height: 23px;
+      float: right;
+      border: 1px solid #e12200;
+      background-color: #d54d40;
+      line-height: 23px;
+      text-align: center;
+      color: white; }
+  #main #search .search_most {
+    position: absolute;
+    right: 8px;
+    top: 28px;
+    width: 55px;
+    height: 34px;
+    padding-left: 10px;
+    margin-top: -2px; }
+    #main #search .search_most a {
+      font-size: 13px;
+      color: #666666; }
+      #main #search .search_most a:hover {
+        color: red;
+        text-decoration: underline; }
+  #main #search .search_hot {
+    position: absolute;
+    right: 94px;
+    top: 54px;
+    height: 28px;
+    line-height: 28px;
+    width: 525px; }
+    #main #search .search_hot span, #main #search .search_hot a {
+      padding: 3px;
+      line-height: 21px;
+      font-size: 12px; }
+    #main #search .search_hot a {
+      color: #666666; }
+      #main #search .search_hot a:hover {
+        color: red;
+        text-decoration: underline; }
+
+/* main导航1 */
+#main #main_navbg {
+  width: 100%;
+  height: 35px;
+  background-color: #678876; }
+  #main #main_navbg .main_allkind {
+    width: 209px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    background-color: #546f60;
+    position: relative;
+    float: left; }
+    #main #main_navbg .main_allkind .i_down {
+      display: inline-block;
+      font-size: 22px;
+      transform: rotate(90deg);
+      position: absolute;
+      right: 20px; }
+    #main #main_navbg .main_allkind #all_select {
+      width: 207px;
+      border: 1px solid #546f60;
+      position: absolute;
+      background-color: #f5f3f2;
+      z-index: 5;
+      display: none; }
+      #main #main_navbg .main_allkind #all_select > li {
+        padding: 2px;
+        border-bottom: 1px dotted #dcdcdc;
+        position: relative; }
+        #main #main_navbg .main_allkind #all_select > li:hover {
+          background-color: white;
+          border-top: 1px solid #546f60;
+          border-bottom: 1px solid #546f60; }
+        #main #main_navbg .main_allkind #all_select > li:hover a {
+          color: red; }
+        #main #main_navbg .main_allkind #all_select > li:hover #some_kind li a {
+          color: white; }
+        #main #main_navbg .main_allkind #all_select > li:hover h1 i {
+          color: white; }
+        #main #main_navbg .main_allkind #all_select > li:hover .more_details {
+          display: block; }
+      #main #main_navbg .main_allkind #all_select > li:nth-child(1) {
+        margin-top: 10px; }
+      #main #main_navbg .main_allkind #all_select > li:hover .more_details_box {
+        display: block; }
+      #main #main_navbg .main_allkind #all_select h1 {
+        position: relative;
+        height: 22px;
+        padding-left: 30px;
+        line-height: 22px;
+        text-align: left; }
+        #main #main_navbg .main_allkind #all_select h1 a {
+          color: #546f60; }
+          #main #main_navbg .main_allkind #all_select h1 a:hover {
+            color: red; }
+        #main #main_navbg .main_allkind #all_select h1 i {
+          display: block;
+          font-size: 18px;
+          color: #546f60;
+          position: absolute;
+          right: 34px;
+          top: 0px; }
+      #main #main_navbg .main_allkind #all_select #some_kind {
+        padding: 5px 10px;
+        position: relative;
+        overflow: hidden; }
+        #main #main_navbg .main_allkind #all_select #some_kind li {
+          float: left;
+          padding: 2px 5px;
+          font-size: 12px; }
+          #main #main_navbg .main_allkind #all_select #some_kind li a {
+            color: #757575; }
+            #main #main_navbg .main_allkind #all_select #some_kind li a:hover {
+              text-decoration: underline; }
+      #main #main_navbg .main_allkind #all_select .more_details_box {
+        width: 500px;
+        padding: 0px 15px;
+        position: absolute;
+        left: 207px;
+        top: 0px;
+        background-color: white;
+        border: 1px solid #546f60;
+        z-index: 4;
+        display: none; }
+        #main #main_navbg .main_allkind #all_select .more_details_box li {
+          padding: 2px;
+          border-bottom: 1px dotted #dcdcdc;
+          overflow: hidden; }
+          #main #main_navbg .main_allkind #all_select .more_details_box li span {
+            width: 80px;
+            height: 30px;
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            float: left; }
+          #main #main_navbg .main_allkind #all_select .more_details_box li a {
+            height: 25px;
+            font-size: 12px;
+            color: #546f60;
+            padding-right: 9px;
+            float: left; }
+            #main #main_navbg .main_allkind #all_select .more_details_box li a:hover {
+              color: red; }
+    #main #main_navbg .main_allkind:hover i {
+      color: #b52a13; }
+    #main #main_navbg .main_allkind:hover #all_select {
+      display: block; }
+  #main #main_navbg .main_area {
+    height: 35px;
+    float: left; }
+    #main #main_navbg .main_area li {
+      height: 33px;
+      float: left;
+      padding: 0px 13px;
+      line-height: 33px;
+      font-color: white; }
+      #main #main_navbg .main_area li a {
+        color: white; }
+      #main #main_navbg .main_area li:hover {
+        border-bottom: 2px solid red;
+        background-color: #546f60; }
+    #main #main_navbg .main_area #readarea {
+      background-color: red;
+      position: relative; }
+      #main #main_navbg .main_area #readarea i {
+        display: block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: -12px;
+        right: 30px;
+        background: url("../img/remai.jpg") no-repeat; }
+
+/* main导航2 */
+#main #main_navbg2 {
+  width: 100%;
+  height: 30px;
+  background-color: #f5f3f2;
+  border-bottom: 1px solid #dad9d8;
+  position: relative; }
+  #main #main_navbg2 .padl {
+    padding-left: 134px;
+    width: 991px; }
+    #main #main_navbg2 .padl #bookkind {
+      height: 100%; }
+      #main #main_navbg2 .padl #bookkind li {
+        padding: 2px 12px;
+        line-height: 26px;
+        float: left;
+        font-size: 13px;
+        background: url("../img/shu.jpg") no-repeat 0px 8px; }
+        #main #main_navbg2 .padl #bookkind li:nth-child(1) {
+          background: none; }
+        #main #main_navbg2 .padl #bookkind li a {
+          color: gray; }
+          #main #main_navbg2 .padl #bookkind li a:hover {
+            color: red;
+            text-decoration: underline; }
+
+/* 尾部，公共部分 */
+#footer {
+  height: 420px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #f9f9f9;
+  overflow: hidden; }
+  #footer .del {
+    width: 1054px;
+    height: 170px;
+    padding: 25px 0px 0px 121px; }
+    #footer .del dl {
+      width: 133px;
+      height: 100%;
+      float: left;
+      margin-right: 25px;
+      list-style: disc;
+      color: #666666; }
+      #footer .del dl dt {
+        width: 100%;
+        height: 20px;
+        border-bottom: 1px solid #c6c6c6;
+        background-size: 133px 20px;
+        margin-bottom: 10px;
+        list-style: disc; }
+      #footer .del dl dd {
+        height: 20px;
+        width: 100%;
+        font-size: 13px; }
+        #footer .del dl dd a {
+          display: block;
+          width: 118px;
+          padding-left: 15px;
+          background: url("../img/disc.jpg") no-repeat 5px 3px;
+          color: #666666; }
+          #footer .del dl dd a:hover {
+            color: red;
+            text-decoration: underline; }
+      #footer .del dl .cl_time {
+        color: #936693; }
+      #footer .del dl .cl_num {
+        color: red; }
+  #footer .other_con {
+    width: 1188px;
+    height: 48px;
+    border: 1px solid #666666;
+    padding-top: 10px;
+    padding-left: 10px; }
+    #footer .other_con h1 {
+      width: 133px;
+      float: left;
+      font-weight: 700;
+      color: #546f60; }
+    #footer .other_con ul {
+      width: 1055px;
+      height: 44px;
+      padding-top: 4px;
+      float: right; }
+      #footer .other_con ul li {
+        float: left;
+        width: 105px;
+        height: 22px;
+        font-size: 12px;
+        text-align: center; }
+        #footer .other_con ul li a {
+          width: 100%;
+          color: #666666; }
+          #footer .other_con ul li a:hover {
+            color: red;
+            text-decoration: underline; }
+  #footer .f_nav {
+    height: 17px;
+    padding-top: 26px;
+    padding-bottom: 19px;
+    text-align: center; }
+    #footer .f_nav a {
+      color: gray;
+      font-size: 12px;
+      padding: 0px 9px; }
+      #footer .f_nav a:hover {
+        color: red;
+        text-decoration: underline; }
+  #footer .f_copyright {
+    height: 50px; }
+    #footer .f_copyright p {
+      text-align: center;
+      color: gray;
+      font-size: 12px; }
+      #footer .f_copyright p a {
+        color: gray; }
+        #footer .f_copyright p a:hover {
+          color: red;
+          text-decoration: underline; }
+  #footer .con_logo {
+    width: 100%;
+    text-align: center; }
+
+/*# sourceMappingURL=common.css.map */

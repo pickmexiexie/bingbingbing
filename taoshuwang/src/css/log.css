@@ -1,0 +1,157 @@
+@charset "UTF-8";
+body {
+  color: #333; }
+
+#header, #main, #footer {
+  width: 100%; }
+
+/* 头部链接图片样式 */
+#header #logo {
+  width: 898px;
+  height: 74px;
+  padding: 20px 0px 0px 52px; }
+
+/* 登录框样式 */
+#main .login {
+  width: 100%;
+  height: 410px;
+  background: url("../img/login_bg.jpg") no-repeat;
+  border-bottom: 1px solid #e8e5de; }
+  #main .login .login_box {
+    width: 327px;
+    padding: 48px 0px 48px 490px; }
+    #main .login .login_box .login_border {
+      width: 325px;
+      border: 1px solid #cacaca; }
+      #main .login .login_box .login_border .td {
+        width: 100%;
+        height: 36px; }
+        #main .login .login_box .login_border .td ul li {
+          width: 162px;
+          height: 35px;
+          float: left;
+          text-align: center;
+          line-height: 35px;
+          color: #546f60;
+          font-size: 14px; }
+          #main .login .login_box .login_border .td ul li:nth-child(2) {
+            border-left: 1px solid #cacaca;
+            border-bottom: 1px solid #cacaca;
+            background-color: #eeeeee; }
+            #main .login .login_box .login_border .td ul li:nth-child(2) a {
+              color: #999999;
+              font-size: 12px; }
+      #main .login .login_box .login_border .bd {
+        width: 315px;
+        padding: 10px 6px 16px 4px; }
+        #main .login .login_box .login_border .bd .login_msg {
+          margin-left: 20px;
+          overflow: hidden;
+          width: 278px;
+          margin-top: 10px;
+          border: 1px solid #ff8080;
+          background-color: #fff2f2;
+          display: none; }
+          #main .login .login_box .login_border .bd .login_msg .error {
+            border-color: #ff8080;
+            line-height: 18px;
+            padding: 2px 10px 2px 33px;
+            min-height: 20px;
+            line-height: 20px;
+            font-size: 13px; }
+        #main .login .login_box .login_border .bd form {
+          width: 100%;
+          height: 100%; }
+          #main .login .login_box .login_border .bd form .feild {
+            padding-top: 10px;
+            height: 50px;
+            /* 这是聚焦时的输入框高亮效果类，点击时触发 */ }
+            #main .login .login_box .login_border .bd form .feild label {
+              display: inline-block;
+              padding-right: 10px;
+              text-align: right;
+              width: 66px;
+              color: #546f60;
+              font-size: 12px; }
+            #main .login .login_box .login_border .bd form .feild .login_txt {
+              border: 1px solid #c8c8c8;
+              height: 18px;
+              line-height: 18px;
+              margin-right: 3px;
+              padding: 3px;
+              vertical-align: middle;
+              width: 180px;
+              color: #666; }
+            #main .login .login_box .login_border .bd form .feild .login_txt_focus {
+              border: 2px solid skyblue; }
+            #main .login .login_box .login_border .bd form .feild .tip {
+              clear: both;
+              color: #9c9c9c;
+              display: block;
+              padding: 4px 0 0 82px;
+              font-size: 12px;
+              display: none; }
+          #main .login .login_box .login_border .bd form .submit_box {
+            overflow: hidden;
+            padding: 10px 0 0 80px; }
+            #main .login .login_box .login_border .bd form .submit_box #submit_btn {
+              width: 90px;
+              height: 25px;
+              border-radius: 7px;
+              background-color: #d87f56;
+              color: white;
+              font-size: 19px;
+              line-height: 25px;
+              cursor: pointer; }
+              #main .login .login_box .login_border .bd form .submit_box #submit_btn:hover {
+                background-color: #d89f57; }
+            #main .login .login_box .login_border .bd form .submit_box #forget {
+              line-height: 24px;
+              color: #757575;
+              font-size: 13px; }
+              #main .login .login_box .login_border .bd form .submit_box #forget:hover {
+                color: red;
+                text-decoration: underline; }
+        #main .login .login_box .login_border .bd .other {
+          height: 28px;
+          margin: 10px 10px 0 10px;
+          padding-left: 10px;
+          padding-top: 8px;
+          border-top: 1px solid #ededed; }
+          #main .login .login_box .login_border .bd .other li {
+            padding-left: 20px;
+            padding-right: 10px;
+            float: left; }
+            #main .login .login_box .login_border .bd .other li a {
+              color: #808080;
+              font-size: 13px; }
+              #main .login .login_box .login_border .bd .other li a:hover {
+                color: red;
+                text-decoration: underline; }
+          #main .login .login_box .login_border .bd .other .alipay {
+            background: url("../img/alipay.jpg") no-repeat; }
+          #main .login .login_box .login_border .bd .other .sina {
+            background: url("../img/sina.jpg") no-repeat; }
+
+/*底部导航*/
+#footer .f_nav {
+  height: 17px;
+  padding-top: 12px;
+  padding-bottom: 19px;
+  text-align: center; }
+  #footer .f_nav a {
+    color: gray;
+    font-size: 12px;
+    padding: 0px 9px; }
+    #footer .f_nav a:hover {
+      color: red;
+      text-decoration: underline; }
+
+#footer .f_copyright {
+  height: 75px; }
+  #footer .f_copyright p {
+    text-align: center;
+    color: gray;
+    font-size: 12px; }
+
+/*# sourceMappingURL=log.css.map */

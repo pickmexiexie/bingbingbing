@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <link rel="stylesheet" type="text/css" href="../css/common.css" />
+        <link rel="stylesheet" type="text/css" href="../css/list.css" />
+        <script type="text/javascript" src="../lib/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="../js/list.js"></script>
+    </head>
+    <body>
+    <div id="page">
+        <!-- 最顶部栏 -->
+        <div id="header">
+            <div class="container">
+                <div class="h_nav">
+                    <p class="h_aishu fl">爱书的朋友，欢迎来淘书！<a class="h_plog" href="login.html">请登录</a><a class="h_freg" href="registe.html">免费注册</a>
+                    </p>
+                    <ul class="h_select fr">
+                        <li>
+                            <a href="../index.html" class="h_index">首页</a>
+                        </li>
+                        <li class="h_taoshu">
+                            <div class="h_meu">
+                                <a href="#">我的淘书</a>
+                                <b></b>
+                            </div>
+                            <div class="h_con hide">
+                                <a href="#" class="h_list">我的订单</a>
+                                <a href="#" class="h_ad">我的住址</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="h_cart"><i></i>购物车&nbsp;<span class="h_cartcount">0</span>&nbsp;件</a>
+                        </li>
+                        <li>
+                            <a href="#" class="h_save">收藏夹</a>
+                        </li>
+                        <li>
+                            <a href="#" class="groupbuy">团购批发</a>
+                        </li>
+                        <li>
+                            <a href="#"  class="h_help">帮助中心</a>
+                        </li>
+                        <li class="h_tel">
+                            <em>400-8888-184</em>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- main主要部分 -->
+        <div id="main">
+            <div class="container">
+                <!-- 顶部搜索部分 -->
+                <div id="search">
+                    <!-- logo图 -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="../img/taoshu-logo.jpg" height="70" width="301" alt="" />
+                        </a>
+                    </div>
+                    <!-- 热门搜索 -->
+                    <div class="search_hot">
+                        <span>热门搜索：</span>
+                        <a href="#">门罗</a>
+                        <a href="#">春上春树</a>
+                        <a href="#">苏立文</a>
+                        <a href="#">溥仪</a>
+                        <a href="#">莫言</a>
+                        <a href="#">诺贝尔文学奖</a>
+                        <a href="#">佛教</a>
+                        <a href="#">民国</a>
+                        <a href="#">周汝昌</a>
+                        <a href="#">辛亥</a>
+                    </div>
+                    <!-- 搜索框 -->
+                    <div class="search_bg">
+                        <div class="search_content">
+                            <label class="search_tip">找书、作家、出版社？</label>
+                            <input type="text" id="search_inf" name="search_inf" />
+                            <ul id="search_list"></ul>
+                            <div class="search_all">
+                                <span class="pl">搜索全部</span>
+                                <span class="wh"><i class="jiantou"></i></span>
+                                <div class="search_kind">
+                                    <h1>搜索全部</h1>
+                                    <ul class="search_option">
+                                        <li class="cs"><b>√</b><span>ISBN</span></li>
+                                        <li class="cs"><b>√</b><span>书名</span></li>
+                                        <li class="cs"><b>√</b><span>作者</span></li>
+                                        <li class="cs"><b>√</b><span>出版社</span></li>
+                                        <li class="cs"><b>√</b><span>丛书</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="button" class="search_btn" value="搜 索" />
+                    </div>
+                    <!-- 高级搜索 -->
+                    <div class="search_most">
+                        <a href="#">高级搜索</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main导航 -->
+            <div id="main_navbg">
+                <div class="container">
+                    <div class="main_allkind">全部图书分类<i class="i_down">></i>
+                        <ul id="all_select">
+                            <li>
+                                <h1><a href="html/list.html">人文科学</a><i>></i></h1>
+                                <ul class="more_details_box">
+                                    <li>
+                                        <span><a href="#">国学</a></span>
+                                        <a href="#">经史</a>
+                                        <a href="#">史部</a>
+                                        <a href="#">子部</a>
+                                        <a href="#">集部</a>
+                                        <a href="#">丛部</a>
+                                        <a href="#">国学入门</a>
+                                        <a href="#">国学著作</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">哲学</a></span>
+                                        <a href="#">哲学理论</a>
+                                        <a href="#">中国哲学</a>
+                                        <a href="#">马/列/毛/邓经典理论</a>
+                                        <a href="#">世界哲学</a>
+                                        <a href="#">逻辑学</a>
+                                        <a href="#">美学</a>
+                                        <a href="#">心理学</a>
+                                        <a href="#">哲学知识读物</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">宗教</a></span>
+                                        <a href="#">宗教理论</a>
+                                        <a href="#">佛教</a>
+                                        <a href="#">道教</a>
+                                        <a href="#">基督教</a>
+                                        <a href="#">伊斯兰教</a>
+                                        <a href="#">其他宗教</a>
+                                        <a href="#">宗教知识读物</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">社会科学</a></span>
+                                        <a href="#">社会科学总论</a>
+                                        <a href="#">社会学</a>
+                                        <a href="#">民族学</a>
+                                        <a href="#">信息与知识传播</a>
+                                        <a href="#">语言文学</a>
+                                        <a href="#">人口学</a>
+                                        <a href="#">统计学</a>
+                                        <a href="#">图书馆学/情报学/档案学</a>
+                                        <a href="#">人才学</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">政治</a></span>
+                                        <a href="#">政治理论</a>
+                                        <a href="#">中国政治</a>
+                                        <a href="#">世界政治</a>
+                                        <a href="#">外交、国际关系</a>
+                                        <a href="#">时政</a>
+                                        <a href="#">党政读物</a>
+                                        <a href="#">行政管理</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">军事</a></span>
+                                        <a href="#">军事理论</a>
+                                        <a href="#">中国军事</a>
+                                        <a href="#">世界军事</a>
+                                        <a href="#">军事技术</a>
+                                        <a href="#">军事历史/纪实</a>
+                                        <a href="#">兵器</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">文化</a></span>
+                                        <a href="#">文化理论</a>
+                                        <a href="#">文化评述</a>
+                                        <a href="#">中国文化</a>
+                                        <a href="#">世界各国文化</a>
+                                        <a href="#">地域文化</a>
+                                        <a href="#">神秘现象</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">历史</a></span>
+                                        <a href="#">史学理论</a>
+                                        <a href="#">中国史</a>
+                                        <a href="#">世界史</a>
+                                        <a href="#">风俗习惯</a>
+                                        <a href="#">文物考古</a>
+                                        <a href="#">地方史志</a>
+                                        <a href="#">历史知识读物</a>
+                                        <a href="#">民族史志</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">历史</a></span>
+                                        <a href="#">地理学理论</a>
+                                        <a href="#">中国地理</a>
+                                        <a href="#">世界地理</a>
+                                        <a href="#">地图</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h1><a href="html/list.html">人文科学</a><i>></i></h1>
+                                <ul class="more_details_box">
+                                    <li>
+                                        <span><a href="#">国学</a></span>
+                                        <a href="#">经史</a>
+                                        <a href="#">史部</a>
+                                        <a href="#">子部</a>
+                                        <a href="#">集部</a>
+                                        <a href="#">丛部</a>
+                                        <a href="#">国学入门</a>
+                                        <a href="#">国学著作</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">哲学</a></span>
+                                        <a href="#">哲学理论</a>
+                                        <a href="#">中国哲学</a>
+                                        <a href="#">马/列/毛/邓经典理论</a>
+                                        <a href="#">世界哲学</a>
+                                        <a href="#">逻辑学</a>
+                                        <a href="#">美学</a>
+                                        <a href="#">心理学</a>
+                                        <a href="#">哲学知识读物</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">宗教</a></span>
+                                        <a href="#">宗教理论</a>
+                                        <a href="#">佛教</a>
+                                        <a href="#">道教</a>
+                                        <a href="#">基督教</a>
+                                        <a href="#">伊斯兰教</a>
+                                        <a href="#">其他宗教</a>
+                                        <a href="#">宗教知识读物</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">社会科学</a></span>
+                                        <a href="#">社会科学总论</a>
+                                        <a href="#">社会学</a>
+                                        <a href="#">民族学</a>
+                                        <a href="#">信息与知识传播</a>
+                                        <a href="#">语言文学</a>
+                                        <a href="#">人口学</a>
+                                        <a href="#">统计学</a>
+                                        <a href="#">图书馆学/情报学/档案学</a>
+                                        <a href="#">人才学</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">政治</a></span>
+                                        <a href="#">政治理论</a>
+                                        <a href="#">中国政治</a>
+                                        <a href="#">世界政治</a>
+                                        <a href="#">外交、国际关系</a>
+                                        <a href="#">时政</a>
+                                        <a href="#">党政读物</a>
+                                        <a href="#">行政管理</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">军事</a></span>
+                                        <a href="#">军事理论</a>
+                                        <a href="#">中国军事</a>
+                                        <a href="#">世界军事</a>
+                                        <a href="#">军事技术</a>
+                                        <a href="#">军事历史/纪实</a>
+                                        <a href="#">兵器</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">文化</a></span>
+                                        <a href="#">文化理论</a>
+                                        <a href="#">文化评述</a>
+                                        <a href="#">中国文化</a>
+                                        <a href="#">世界各国文化</a>
+                                        <a href="#">地域文化</a>
+                                        <a href="#">神秘现象</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">历史</a></span>
+                                        <a href="#">史学理论</a>
+                                        <a href="#">中国史</a>
+                                        <a href="#">世界史</a>
+                                        <a href="#">风俗习惯</a>
+                                        <a href="#">文物考古</a>
+                                        <a href="#">地方史志</a>
+                                        <a href="#">历史知识读物</a>
+                                        <a href="#">民族史志</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">历史</a></span>
+                                        <a href="#">地理学理论</a>
+                                        <a href="#">中国地理</a>
+                                        <a href="#">世界地理</a>
+                                        <a href="#">地图</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h1><a href="html/list.html">人文科学</a><i>></i></h1>
+                                <ul class="more_details_box">
+                                    <li>
+                                        <span><a href="#">国学</a></span>
+                                        <a href="#">经史</a>
+                                        <a href="#">史部</a>
+                                        <a href="#">子部</a>
+                                        <a href="#">集部</a>
+                                        <a href="#">丛部</a>
+                                        <a href="#">国学入门</a>
+                                        <a href="#">国学著作</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">哲学</a></span>
+                                        <a href="#">哲学理论</a>
+                                        <a href="#">中国哲学</a>
+                                        <a href="#">马/列/毛/邓经典理论</a>
+                                        <a href="#">世界哲学</a>
+                                        <a href="#">逻辑学</a>
+                                        <a href="#">美学</a>
+                                        <a href="#">心理学</a>
+                                        <a href="#">哲学知识读物</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">宗教</a></span>
+                                        <a href="#">宗教理论</a>
+                                        <a href="#">佛教</a>
+                                        <a href="#">道教</a>
+                                        <a href="#">基督教</a>
+                                        <a href="#">伊斯兰教</a>
+                                        <a href="#">其他宗教</a>
+                                        <a href="#">宗教知识读物</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">社会科学</a></span>
+                                        <a href="#">社会科学总论</a>
+                                        <a href="#">社会学</a>
+                                        <a href="#">民族学</a>
+                                        <a href="#">信息与知识传播</a>
+                                        <a href="#">语言文学</a>
+                                        <a href="#">人口学</a>
+                                        <a href="#">统计学</a>
+                                        <a href="#">图书馆学/情报学/档案学</a>
+                                        <a href="#">人才学</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">政治</a></span>
+                                        <a href="#">政治理论</a>
+                                        <a href="#">中国政治</a>
+                                        <a href="#">世界政治</a>
+                                        <a href="#">外交、国际关系</a>
+                                        <a href="#">时政</a>
+                                        <a href="#">党政读物</a>
+                                        <a href="#">行政管理</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">军事</a></span>
+                                        <a href="#">军事理论</a>
+                                        <a href="#">中国军事</a>
+                                        <a href="#">世界军事</a>
+                                        <a href="#">军事技术</a>
+                                        <a href="#">军事历史/纪实</a>
+                                        <a href="#">兵器</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">文化</a></span>
+                                        <a href="#">文化理论</a>
+                                        <a href="#">文化评述</a>
+                                        <a href="#">中国文化</a>
+                                        <a href="#">世界各国文化</a>
+                                        <a href="#">地域文化</a>
+                                        <a href="#">神秘现象</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">历史</a></span>
+                                        <a href="#">史学理论</a>
+                                        <a href="#">中国史</a>
+                                        <a href="#">世界史</a>
+                                        <a href="#">风俗习惯</a>
+                                        <a href="#">文物考古</a>
+                                        <a href="#">地方史志</a>
+                                        <a href="#">历史知识读物</a>
+                                        <a href="#">民族史志</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">历史</a></span>
+                                        <a href="#">地理学理论</a>
+                                        <a href="#">中国地理</a>
+                                        <a href="#">世界地理</a>
+                                        <a href="#">地图</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h1><a href="html/list.html">人文科学</a><i>></i></h1>
+                                <div class="more_details">
+                                    <ul class="more_details_box">
+                                        <li>
+                                            <span><a href="#">国学</a></span>
+                                            <a href="#">经史</a>
+                                            <a href="#">史部</a>
+                                            <a href="#">子部</a>
+                                            <a href="#">集部</a>
+                                            <a href="#">丛部</a>
+                                            <a href="#">国学入门</a>
+                                            <a href="#">国学著作</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">哲学</a></span>
+                                            <a href="#">哲学理论</a>
+                                            <a href="#">中国哲学</a>
+                                            <a href="#">马/列/毛/邓经典理论</a>
+                                            <a href="#">世界哲学</a>
+                                            <a href="#">逻辑学</a>
+                                            <a href="#">美学</a>
+                                            <a href="#">心理学</a>
+                                            <a href="#">哲学知识读物</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">宗教</a></span>
+                                            <a href="#">宗教理论</a>
+                                            <a href="#">佛教</a>
+                                            <a href="#">道教</a>
+                                            <a href="#">基督教</a>
+                                            <a href="#">伊斯兰教</a>
+                                            <a href="#">其他宗教</a>
+                                            <a href="#">宗教知识读物</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">社会科学</a></span>
+                                            <a href="#">社会科学总论</a>
+                                            <a href="#">社会学</a>
+                                            <a href="#">民族学</a>
+                                            <a href="#">信息与知识传播</a>
+                                            <a href="#">语言文学</a>
+                                            <a href="#">人口学</a>
+                                            <a href="#">统计学</a>
+                                            <a href="#">图书馆学/情报学/档案学</a>
+                                            <a href="#">人才学</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">政治</a></span>
+                                            <a href="#">政治理论</a>
+                                            <a href="#">中国政治</a>
+                                            <a href="#">世界政治</a>
+                                            <a href="#">外交、国际关系</a>
+                                            <a href="#">时政</a>
+                                            <a href="#">党政读物</a>
+                                            <a href="#">行政管理</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">军事</a></span>
+                                            <a href="#">军事理论</a>
+                                            <a href="#">中国军事</a>
+                                            <a href="#">世界军事</a>
+                                            <a href="#">军事技术</a>
+                                            <a href="#">军事历史/纪实</a>
+                                            <a href="#">兵器</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">文化</a></span>
+                                            <a href="#">文化理论</a>
+                                            <a href="#">文化评述</a>
+                                            <a href="#">中国文化</a>
+                                            <a href="#">世界各国文化</a>
+                                            <a href="#">地域文化</a>
+                                            <a href="#">神秘现象</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">历史</a></span>
+                                            <a href="#">史学理论</a>
+                                            <a href="#">中国史</a>
+                                            <a href="#">世界史</a>
+                                            <a href="#">风俗习惯</a>
+                                            <a href="#">文物考古</a>
+                                            <a href="#">地方史志</a>
+                                            <a href="#">历史知识读物</a>
+                                            <a href="#">民族史志</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">历史</a></span>
+                                            <a href="#">地理学理论</a>
+                                            <a href="#">中国地理</a>
+                                            <a href="#">世界地理</a>
+                                            <a href="#">地图</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h1><a href="html/list.html">人文科学</a><i>></i></h1>
+                                <ul class="more_details_box">
+                                    <li>
+                                        <span><a href="#">国学</a></span>
+                                        <a href="#">经史</a>
+                                        <a href="#">史部</a>
+                                        <a href="#">子部</a>
+                                        <a href="#">集部</a>
+                                        <a href="#">丛部</a>
+                                        <a href="#">国学入门</a>
+                                        <a href="#">国学著作</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">哲学</a></span>
+                                        <a href="#">哲学理论</a>
+                                        <a href="#">中国哲学</a>
+                                        <a href="#">马/列/毛/邓经典理论</a>
+                                        <a href="#">世界哲学</a>
+                                        <a href="#">逻辑学</a>
+                                        <a href="#">美学</a>
+                                        <a href="#">心理学</a>
+                                        <a href="#">哲学知识读物</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">宗教</a></span>
+                                        <a href="#">宗教理论</a>
+                                        <a href="#">佛教</a>
+                                        <a href="#">道教</a>
+                                        <a href="#">基督教</a>
+                                        <a href="#">伊斯兰教</a>
+                                        <a href="#">其他宗教</a>
+                                        <a href="#">宗教知识读物</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">社会科学</a></span>
+                                        <a href="#">社会科学总论</a>
+                                        <a href="#">社会学</a>
+                                        <a href="#">民族学</a>
+                                        <a href="#">信息与知识传播</a>
+                                        <a href="#">语言文学</a>
+                                        <a href="#">人口学</a>
+                                        <a href="#">统计学</a>
+                                        <a href="#">图书馆学/情报学/档案学</a>
+                                        <a href="#">人才学</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">政治</a></span>
+                                        <a href="#">政治理论</a>
+                                        <a href="#">中国政治</a>
+                                        <a href="#">世界政治</a>
+                                        <a href="#">外交、国际关系</a>
+                                        <a href="#">时政</a>
+                                        <a href="#">党政读物</a>
+                                        <a href="#">行政管理</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">军事</a></span>
+                                        <a href="#">军事理论</a>
+                                        <a href="#">中国军事</a>
+                                        <a href="#">世界军事</a>
+                                        <a href="#">军事技术</a>
+                                        <a href="#">军事历史/纪实</a>
+                                        <a href="#">兵器</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">文化</a></span>
+                                        <a href="#">文化理论</a>
+                                        <a href="#">文化评述</a>
+                                        <a href="#">中国文化</a>
+                                        <a href="#">世界各国文化</a>
+                                        <a href="#">地域文化</a>
+                                        <a href="#">神秘现象</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">历史</a></span>
+                                        <a href="#">史学理论</a>
+                                        <a href="#">中国史</a>
+                                        <a href="#">世界史</a>
+                                        <a href="#">风俗习惯</a>
+                                        <a href="#">文物考古</a>
+                                        <a href="#">地方史志</a>
+                                        <a href="#">历史知识读物</a>
+                                        <a href="#">民族史志</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">历史</a></span>
+                                        <a href="#">地理学理论</a>
+                                        <a href="#">中国地理</a>
+                                        <a href="#">世界地理</a>
+                                        <a href="#">地图</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h1><a href="html/list.html">人文科学</a><i>></i></h1>
+                                <div class="more_details">
+                                    <ul class="more_details_box">
+                                        <li>
+                                            <span><a href="#">国学</a></span>
+                                            <a href="#">经史</a>
+                                            <a href="#">史部</a>
+                                            <a href="#">子部</a>
+                                            <a href="#">集部</a>
+                                            <a href="#">丛部</a>
+                                            <a href="#">国学入门</a>
+                                            <a href="#">国学著作</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">哲学</a></span>
+                                            <a href="#">哲学理论</a>
+                                            <a href="#">中国哲学</a>
+                                            <a href="#">马/列/毛/邓经典理论</a>
+                                            <a href="#">世界哲学</a>
+                                            <a href="#">逻辑学</a>
+                                            <a href="#">美学</a>
+                                            <a href="#">心理学</a>
+                                            <a href="#">哲学知识读物</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">宗教</a></span>
+                                            <a href="#">宗教理论</a>
+                                            <a href="#">佛教</a>
+                                            <a href="#">道教</a>
+                                            <a href="#">基督教</a>
+                                            <a href="#">伊斯兰教</a>
+                                            <a href="#">其他宗教</a>
+                                            <a href="#">宗教知识读物</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">社会科学</a></span>
+                                            <a href="#">社会科学总论</a>
+                                            <a href="#">社会学</a>
+                                            <a href="#">民族学</a>
+                                            <a href="#">信息与知识传播</a>
+                                            <a href="#">语言文学</a>
+                                            <a href="#">人口学</a>
+                                            <a href="#">统计学</a>
+                                            <a href="#">图书馆学/情报学/档案学</a>
+                                            <a href="#">人才学</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">政治</a></span>
+                                            <a href="#">政治理论</a>
+                                            <a href="#">中国政治</a>
+                                            <a href="#">世界政治</a>
+                                            <a href="#">外交、国际关系</a>
+                                            <a href="#">时政</a>
+                                            <a href="#">党政读物</a>
+                                            <a href="#">行政管理</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">军事</a></span>
+                                            <a href="#">军事理论</a>
+                                            <a href="#">中国军事</a>
+                                            <a href="#">世界军事</a>
+                                            <a href="#">军事技术</a>
+                                            <a href="#">军事历史/纪实</a>
+                                            <a href="#">兵器</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">文化</a></span>
+                                            <a href="#">文化理论</a>
+                                            <a href="#">文化评述</a>
+                                            <a href="#">中国文化</a>
+                                            <a href="#">世界各国文化</a>
+                                            <a href="#">地域文化</a>
+                                            <a href="#">神秘现象</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">历史</a></span>
+                                            <a href="#">史学理论</a>
+                                            <a href="#">中国史</a>
+                                            <a href="#">世界史</a>
+                                            <a href="#">风俗习惯</a>
+                                            <a href="#">文物考古</a>
+                                            <a href="#">地方史志</a>
+                                            <a href="#">历史知识读物</a>
+                                            <a href="#">民族史志</a>
+                                        </li>
+                                        <li>
+                                            <span><a href="#">历史</a></span>
+                                            <a href="#">地理学理论</a>
+                                            <a href="#">中国地理</a>
+                                            <a href="#">世界地理</a>
+                                            <a href="#">地图</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h1><a href="html/list.html">人文科学</a><i>></i></h1>
+                                <ul class="more_details_box">
+                                    <li>
+                                        <span><a href="#">国学</a></span>
+                                        <a href="#">经史</a>
+                                        <a href="#">史部</a>
+                                        <a href="#">子部</a>
+                                        <a href="#">集部</a>
+                                        <a href="#">丛部</a>
+                                        <a href="#">国学入门</a>
+                                        <a href="#">国学著作</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">哲学</a></span>
+                                        <a href="#">哲学理论</a>
+                                        <a href="#">中国哲学</a>
+                                        <a href="#">马/列/毛/邓经典理论</a>
+                                        <a href="#">世界哲学</a>
+                                        <a href="#">逻辑学</a>
+                                        <a href="#">美学</a>
+                                        <a href="#">心理学</a>
+                                        <a href="#">哲学知识读物</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">宗教</a></span>
+                                        <a href="#">宗教理论</a>
+                                        <a href="#">佛教</a>
+                                        <a href="#">道教</a>
+                                        <a href="#">基督教</a>
+                                        <a href="#">伊斯兰教</a>
+                                        <a href="#">其他宗教</a>
+                                        <a href="#">宗教知识读物</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">社会科学</a></span>
+                                        <a href="#">社会科学总论</a>
+                                        <a href="#">社会学</a>
+                                        <a href="#">民族学</a>
+                                        <a href="#">信息与知识传播</a>
+                                        <a href="#">语言文学</a>
+                                        <a href="#">人口学</a>
+                                        <a href="#">统计学</a>
+                                        <a href="#">图书馆学/情报学/档案学</a>
+                                        <a href="#">人才学</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">政治</a></span>
+                                        <a href="#">政治理论</a>
+                                        <a href="#">中国政治</a>
+                                        <a href="#">世界政治</a>
+                                        <a href="#">外交、国际关系</a>
+                                        <a href="#">时政</a>
+                                        <a href="#">党政读物</a>
+                                        <a href="#">行政管理</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">军事</a></span>
+                                        <a href="#">军事理论</a>
+                                        <a href="#">中国军事</a>
+                                        <a href="#">世界军事</a>
+                                        <a href="#">军事技术</a>
+                                        <a href="#">军事历史/纪实</a>
+                                        <a href="#">兵器</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">文化</a></span>
+                                        <a href="#">文化理论</a>
+                                        <a href="#">文化评述</a>
+                                        <a href="#">中国文化</a>
+                                        <a href="#">世界各国文化</a>
+                                        <a href="#">地域文化</a>
+                                        <a href="#">神秘现象</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">历史</a></span>
+                                        <a href="#">史学理论</a>
+                                        <a href="#">中国史</a>
+                                        <a href="#">世界史</a>
+                                        <a href="#">风俗习惯</a>
+                                        <a href="#">文物考古</a>
+                                        <a href="#">地方史志</a>
+                                        <a href="#">历史知识读物</a>
+                                        <a href="#">民族史志</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="#">历史</a></span>
+                                        <a href="#">地理学理论</a>
+                                        <a href="#">中国地理</a>
+                                        <a href="#">世界地理</a>
+                                        <a href="#">地图</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="main_area">
+                        <li><a href="../index.html">首页</a></li>
+                        <li id="readarea"><i></i><a href="#">阅读卡兑换专区</a></li>
+                        <li><a href="#">特卖场</a></li>
+                        <li><a href="#">淘书汇</a></li>
+                        <li><a href="#">团购批发</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- main导航2 -->
+            <div id="main_navbg2">
+                <div class="container">
+                    <div class="padl">
+                        <ul id="bookkind">
+                            <li><a href="#">文学</a></li>
+                            <li><a href="#">小说</a></li>
+                            <li><a href="#">传记</a></li>
+                            <li><a href="#">青春文学</a></li>
+                            <li><a href="#">艺术</a></li>
+                            <li><a href="#">散文随笔</a></li>
+                            <li><a href="#">收藏/鉴赏</a></li>
+                            <li><a href="#">人文社科</a></li>
+                            <li><a href="#">经济管理</a></li>
+                            <li><a href="#">自我实现/励志</a></li>
+                            <li><a href="#">生活事项</a></li>
+                            <li><a href="#">教育/教材</a></li>
+                            <li><a href="#">考试</a></li>
+                            <li><a href="#">少儿/童书</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div id="book_adr">
+                    您现在的位置：
+                </div>
+                <div id="main_list_box">
+                    <div id="main_left_box">
+                        <dl class="list_kind">
+                            <dt>文学</dt>
+                            <dd><a href="#">文学理论(8789)</a></dd>
+                            <dd><a href="#">文学史(789)</a></dd>
+                            <dd><a href="#">作品集(13114)</a></dd>
+                            <dd><a href="#">纪实文学(4385)</a></dd>
+                            <dd><a href="#">诗歌词曲赋(8803)</a></dd>
+                            <dd><a href="#">散文随笔(17074)</a></dd>
+                            <dd><a href="#">戏剧与戏曲(902)</a></dd>
+                            <dd><a href="#">民间文学(1966)</a></dd>
+                            <dd><a href="#">文学评论与研究(4922)</a></dd>
+                        </dl>
+                        <!-- 同类图书热卖榜 -->
+                        <div id="tuijian">
+                            <h1>同类图书热卖榜</h1>
+                            <ul class="tuijian_list">
+                                <li>
+                                    <strong>1</strong>
+                                    <div class="first_show">
+                                        <span>剑桥雅思考试全真试题集8</span>
+                                    </div>
+                                    <div class="than_show">
+                                        <a href="#" class="img_lianjie"><img src="../img/1894537281.jpg" height="60" width="60" alt="" /></a>
+                                        <a href="#" class="title_lianjie">剑桥雅思考试全真试题集8</a>
+                                        <span class="rprice">￥27.50</span>
+                                        <span class="gprice">84折</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>2</strong>
+                                    <div class="first_show">
+                                        <span>剑桥雅思考试全真试题集8</span>
+                                    </div>
+                                    <div class="than_show">
+                                        <a href="#" class="img_lianjie"><img src="../img/1894537281.jpg" height="60" width="60" alt="" /></a>
+                                        <a href="#" class="title_lianjie">剑桥雅思考试全真试题集8</a>
+                                        <span class="rprice">￥27.50</span>
+                                        <span class="gprice">84折</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>3</strong>
+                                    <div class="first_show">
+                                        <span>剑桥雅思考试全真试题集8</span>
+                                    </div>
+                                    <div class="than_show">
+                                        <a href="#" class="img_lianjie"><img src="../img/1894537281.jpg" height="60" width="60" alt="" /></a>
+                                        <a href="#" class="title_lianjie">剑桥雅思考试全真试题集8</a>
+                                        <span class="rprice">￥27.50</span>
+                                        <span class="gprice">84折</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong class="ccc">4</strong>
+                                    <div class="first_show">
+                                        <span>剑桥雅思考试全真试题集8</span>
+                                    </div>
+                                    <div class="than_show">
+                                        <a href="#" class="img_lianjie"><img src="../img/1894537281.jpg" height="60" width="60" alt="" /></a>
+                                        <a href="#" class="title_lianjie">剑桥雅思考试全真试题集8</a>
+                                        <span class="rprice">￥27.50</span>
+                                        <span class="gprice">84折</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong class="ccc">5</strong>
+                                    <div class="first_show">
+                                        <span>剑桥雅思考试全真试题集8</span>
+                                    </div>
+                                    <div class="than_show">
+                                        <a href="#" class="img_lianjie"><img src="../img/1894537281.jpg" height="60" width="60" alt="" /></a>
+                                        <a href="#" class="title_lianjie">剑桥雅思考试全真试题集8</a>
+                                        <span class="rprice">￥27.50</span>
+                                        <span class="gprice">84折</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong class="ccc">6</strong>
+                                    <div class="first_show">
+                                        <span>剑桥雅思考试全真试题集8</span>
+                                    </div>
+                                    <div class="than_show">
+                                        <a href="#" class="img_lianjie"><img src="../img/1894537281.jpg" height="60" width="60" alt="" /></a>
+                                        <a href="#" class="title_lianjie">剑桥雅思考试全真试题集8</a>
+                                        <span class="rprice">￥27.50</span>
+                                        <span class="gprice">84折</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="three_ads">
+                            <a href="#"><img src="../img/1064_190.jpg" height="106" width="190" alt="" /></a>
+                            <a href="#"><img src="../img/1082_190.jpg" height="106" width="190" alt="" /></a>
+                            <a href="#"><img src="../img/1188_190.jpg" height="106" width="190" alt="" /></a>
+                        </div>
+                        </div>
+                    <div id="main_right_box">
+                        <div class="rank">
+                            <div class="rank_l">
+                                <input type="checkbox" />
+                                <label>只显示特价</label>
+                                <input type="checkbox" />
+                                <label>只显示有货</label>
+                            </div>
+                            <div class="rank_r">
+                                <span>排序</span>
+                                <a id="sort_def" title="按数据库id顺序排序">默认</a>
+                                <a id="sort_sales" title="按销量从高到低排序">销量</a>
+                                <a id="sort_price" title="按价格从低到高排序">价格</a>
+                                <a id="sort_discount" title="按折扣从高到低排序">折扣</a>
+                                <a id="sort_ptime" title="按出版时间从近到远排序">出版时间</a>
+                            </div>
+                        </div>
+                        <div class="list_book_con">
+                            <ul class="input_list">
+                                <!-- 渲染列表 -->
+                            </ul>
+                        </div>
+                        <div class="list_book_page"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 底部 -->
+        <div id="footer">
+            <div class="container">
+                <div class="del">
+                    <dl>
+                        <dt style="background:url('../img/xinshourumen.jpg') no-repeat;"></dt>
+                        <dd><a href="#">购物流程</a></dd>
+                        <dd><a href="#">发票制度</a></dd>
+                        <dd><a href="#">积分说明</a></dd>
+                        <dd><a href="#">我的订单</a></dd>
+                        <dd><a href="#">关于特价书</a></dd>
+                    </dl>
+                    <dl>
+                        <dt style="background:url('../img/peisongfangshi.jpg') no-repeat;"></dt>
+                        <dd><a href="#">配送时间及运费</a></dd>
+                        <dd><a href="#">验货与签收</a></dd>
+                        <dd><a href="#">订单配送查询</a></dd>
+                    </dl>
+                    <dl>
+                        <dt style="background:url('../img/zhifufangshi.jpg') no-repeat;"></dt>
+                        <dd><a href="#">货到付款</a></dd>
+                        <dd><a href="#">网上支付</a></dd>
+                        <dd><a href="#">邮局汇款</a></dd>
+                        <dd><a href="#">银行转账</a></dd>
+                        <dd><a href="#">账户余额</a></dd>
+                    </dl>
+                    <dl>
+                        <dt style="background:url('../img/shouhoufuwu.jpg') no-repeat;"></dt>
+                        <dd><a href="#">退换货政策</a></dd>
+                        <dd><a href="#">退换货流程</a></dd>
+                        <dd><a href="#">退换货申请</a></dd>
+                        <dd><a href="#">退款说明</a></dd>
+                        <dd><a href="#">申请余额提现</a></dd>
+                    </dl>
+                    <dl>
+                        <dt style="background:url('../img/bangzhuxinxi.jpg') no-repeat;"></dt>
+                        <dd><a href="#">常见问题</a></dd>
+                        <dd><a href="#">找回密码</a></dd>
+                        <dd><a href="#">汇款单招领</a></dd>
+                        <dd><a href="#">联系客服</a></dd>
+                    </dl>
+                    <dl>
+                        <dt style="background:url('../img/fuwurexian.jpg') no-repeat;"></dt>
+                        <dd>服务时间：周一至周六</dd>
+                        <dd class="cl_time">9:00-18:00</dd>
+                        <dd class="cl_num">400-8888-184</dd>
+                    </dl>
+                </div>
+                <div class="other_con">
+                    <h1>合作单位：</h1>
+                    <ul>
+                        <li><a href="#">孔夫子旧书网</a></li>
+                        <li><a href="#">甲虎网</a></li>
+                        <li><a href="#">中国网读书频道</a></li>
+                        <li><a href="#">起点中文网</a></li>
+                        <li><a href="#">人大经济论坛</a></li>
+                        <li><a href="#">杂志网</a></li>
+                        <li><a href="#">中国教育网</a></li>
+                        <li><a href="#">出版商周报</a></li>
+                        <li><a href="#">作家在线</a></li>
+                        <li><a href="#">凯迪社区</a></li>
+                        <li><a href="#">读书网</a></li>
+                        <li><a href="#">凤凰原创读书频道</a></li>
+                        <li><a href="#">新华悦读</a></li>
+                        <li><a href="#">中国图书商报</a></li>
+                        <li><a href="#">新疆招生网</a></li>
+                        <li><a href="#">大佳网</a></li>
+                    </ul>
+                </div>
+                <div class="f_nav">
+                    <a href="#">关于淘书</a>
+                    <a href="#">诚征英才</a>
+                    <a href="#">图书目录</a>
+                    <a href="#">联系我们</a>
+                    <a href="#">免责条款</a>
+                </div>
+                <div class="f_copyright">
+                    <p>Copyright © 2012-2015 淘书网 Taoshu.com 版权所有&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">京ICP备12020895号</a>&nbsp;出版物经营许可证 &nbsp;新出发京零字第朝110069号</p>
+                </div>
+                <div class="con_logo">
+                    <a href="#"><img src="../img/footer_1.gif" height="44" width="153" alt="" /></a>
+                    <a href="#"><img src="../img/footer_2.gif" height="44" width="110" alt="" /></a>
+                    <a href="#"><img src="../img/footer_3.gif" height="44" width="145" alt="" /></a>
+                    <a href="#"><img src="../img/footer_4.gif" height="44" width="133" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

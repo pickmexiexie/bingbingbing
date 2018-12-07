@@ -1,0 +1,297 @@
+@charset "UTF-8";
+#header, #main, #footer {
+  width: 100%; }
+
+/*头部的导航栏，登录，注册等等*/
+#header {
+  background-color: #fafafa; }
+  #header .h_nav {
+    height: 22px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 12px; }
+    #header .h_nav .h_aishu {
+      width: 244px;
+      height: 22px;
+      line-height: 22px; }
+      #header .h_nav .h_aishu .h_plog, #header .h_nav .h_aishu .h_freg {
+        margin-right: 8px;
+        color: #666; }
+      #header .h_nav .h_aishu a:hover {
+        color: red;
+        text-decoration: underline; }
+    #header .h_nav .h_select {
+      float: right; }
+      #header .h_nav .h_select li {
+        float: left;
+        height: 22px;
+        line-height: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: url("../img/vbor.jpg") no-repeat;
+        background-position: right 5px; }
+        #header .h_nav .h_select li a {
+          color: #666; }
+        #header .h_nav .h_select li em {
+          font-size: 15px;
+          color: red; }
+      #header .h_nav .h_select li:nth-child(2), #header .h_nav .h_select li:nth-child(3), #header .h_nav .h_select li:nth-child(6) {
+        background-image: none; }
+      #header .h_nav .h_select li:nth-child(3) {
+        padding: 0; }
+      #header .h_nav .h_select .h_taoshu {
+        padding: 0;
+        position: relative; }
+        #header .h_nav .h_select .h_taoshu .h_meu {
+          padding-left: 10px;
+          padding-right: 22px;
+          position: relative;
+          z-index: 1002; }
+          #header .h_nav .h_select .h_taoshu .h_meu b {
+            width: 0px;
+            height: 0px;
+            display: inline-block;
+            position: absolute;
+            border: 4px solid transparent;
+            border-top: 4px solid gray;
+            top: 10px;
+            right: 10px;
+            transition: all 0.2s linear; }
+        #header .h_nav .h_select .h_taoshu .h_con {
+          width: 48px;
+          height: 50px;
+          padding: 22px 22px 0 13px;
+          z-index: 1001;
+          position: absolute;
+          top: 2px;
+          left: -3px; }
+          #header .h_nav .h_select .h_taoshu .h_con a {
+            display: inline-block;
+            float: left; }
+          #header .h_nav .h_select .h_taoshu .h_con a:hover {
+            color: red;
+            text-decoration: underline; }
+      #header .h_nav .h_select .h_taoshu:hover .h_con {
+        display: block;
+        border: 1px solid #d8d8d8; }
+      #header .h_nav .h_select .h_taoshu:hover b {
+        transform: rotate(180deg);
+        transition: all 0.2s linear;
+        transform-origin: center top; }
+      #header .h_nav .h_select .h_cart {
+        display: inline-block;
+        width: 70px;
+        height: 18px;
+        margin-top: 2px;
+        line-height: 17px;
+        padding: 0px 6px 0px 25px;
+        border: 1px solid #d8d8d8;
+        position: relative; }
+        #header .h_nav .h_select .h_cart i {
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          position: absolute;
+          background: url("../img/carimg.jpg") no-repeat;
+          top: 2px;
+          left: 3px; }
+        #header .h_nav .h_select .h_cart .h_cartcount {
+          color: red;
+          font-weight: 700; }
+      #header .h_nav .h_select a:hover {
+        color: red;
+        text-decoration: underline; }
+
+/*横图1*/
+#main .banner {
+  height: 77px;
+  padding-top: 15px; }
+
+/*横图2*/
+#main .flowsteps {
+  margin-top: 5px;
+  height: 25px; }
+  #main .flowsteps .num2 {
+    height: 25px; }
+    #main .flowsteps .num2 li {
+      width: 50%;
+      float: left;
+      text-align: center; }
+      #main .flowsteps .num2 li span {
+        color: white; }
+      #main .flowsteps .num2 li .first, #main .flowsteps .num2 li .last {
+        display: block;
+        width: 100%;
+        height: 25px; }
+      #main .flowsteps .num2 li .first {
+        background: url("../img/first.jpg") no-repeat; }
+      #main .flowsteps .num2 li .last {
+        background: url("../img/last.jpg") no-repeat; }
+
+/*信息块*/
+#main .inf {
+  height: 532px;
+  padding-top: 30px;
+  border-bottom: 1px solid #e8e5de;
+  /*左块*/
+  /*右块*/ }
+  #main .inf .inf_l {
+    width: 700px;
+    height: 100%;
+    float: left; }
+    #main .inf .inf_l #inf_form {
+      height: 370px;
+      width: 100%;
+      /*feild是js需要在给焦点时触发的模块，具体是加边框和背景色*/ }
+      #main .inf .inf_l #inf_form .feild {
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 30px; }
+        #main .inf .inf_l #inf_form .feild .focus {
+          padding: 2px 0px;
+          margin: 5px 0px;
+          overflow: hidden;
+          /*wh是给input加宽高的基类*/
+          /*加给验证码的基类*/
+          /*用户名，密码...*/
+          /*换一张，看不清基类*/
+          /*换一张主类*/
+          /*聚焦出现*/
+          /*失去焦点出现*/ }
+          #main .inf .inf_l #inf_form .feild .focus .wh {
+            width: 203px;
+            height: 24px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            float: left;
+            margin-right: 8px; }
+          #main .inf .inf_l #inf_form .feild .focus .rwh {
+            width: 99px;
+            height: 24px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            float: left;
+            margin-right: 8px; }
+          #main .inf .inf_l #inf_form .feild .focus .inf_na {
+            display: inline-block;
+            width: 100px;
+            height: 26px;
+            line-height: 26px;
+            text-align: right;
+            float: left; }
+          #main .inf .inf_l #inf_form .feild .focus .cf {
+            font-size: 12px;
+            float: left;
+            padding-top: 10px; }
+          #main .inf .inf_l #inf_form .feild .focus #picknew {
+            color: #757575;
+            text-decoration: underline;
+            margin-right: 3px; }
+            #main .inf .inf_l #inf_form .feild .focus #picknew:hover {
+              color: red;
+              cursor: pointer; }
+          #main .inf .inf_l #inf_form .feild .focus #four {
+            width: 79px;
+            height: 20px;
+            border: 1px solid black;
+            float: left;
+            margin-top: 3px;
+            margin-right: 3px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 18px;
+            font-weight: 700; }
+          #main .inf .inf_l #inf_form .feild .focus .f_show {
+            display: none;
+            float: left;
+            font-size: 12px;
+            padding-top: 5px;
+            color: #c7744f; }
+          #main .inf .inf_l #inf_form .feild .focus .b_show {
+            display: none;
+            float: left;
+            height: 23px;
+            line-height: 23px;
+            padding-left: 25px;
+            padding-right: 9px;
+            font-size: 12px;
+            text-align: center;
+            border: 1px solid #ff8080;
+            background-color: #fff2f2;
+            position: relative; }
+            #main .inf .inf_l #inf_form .feild .focus .b_show i {
+              display: inline-block;
+              position: absolute;
+              width: 16px;
+              height: 16px;
+              background: url("../img/false.jpg") no-repeat;
+              top: 3px;
+              left: 3px; }
+      #main .inf .inf_l #inf_form .form_b {
+        width: 590px;
+        height: 37px;
+        padding: 3px 0px 3px 110px; }
+        #main .inf .inf_l #inf_form .form_b #submit_btn {
+          width: 130px;
+          height: 37px;
+          border-radius: 7px;
+          background-color: #d87f56;
+          color: white;
+          font-size: 21px;
+          cursor: pointer; }
+        #main .inf .inf_l #inf_form .form_b #submit_btn:hover {
+          background-color: #d89f57; }
+    #main .inf .inf_l .inf_b {
+      padding-left: 46px;
+      padding-top: 3px; }
+      #main .inf .inf_l .inf_b .item_con {
+        width: 598px;
+        height: 79px;
+        padding: 10px;
+        color: #666;
+        border: 1px solid gray;
+        overflow-y: scroll; }
+        #main .inf .inf_l .inf_b .item_con::-webkit-scrollbar-track {
+          background-color: #ccc; }
+        #main .inf .inf_l .inf_b .item_con::-webkit-scrollbar-button {
+          background-color: #ccc; }
+        #main .inf .inf_l .inf_b .item_con h5 {
+          font-size: 12px;
+          font-weight: 700; }
+        #main .inf .inf_l .inf_b .item_con p {
+          font-size: 12px; }
+  #main .inf .inf_r {
+    width: 500px;
+    height: 100%;
+    float: left;
+    font-size: 15px; }
+    #main .inf .inf_r .golog {
+      width: 480px;
+      padding-top: 18px;
+      padding-right: 20px;
+      text-align: right; }
+      #main .inf .inf_r .golog .gl {
+        color: #c7744f; }
+
+/*底部导航*/
+#footer .f_nav {
+  height: 17px;
+  padding-top: 12px;
+  padding-bottom: 19px;
+  text-align: center; }
+  #footer .f_nav a {
+    color: gray;
+    font-size: 12px;
+    padding: 0px 9px; }
+    #footer .f_nav a:hover {
+      color: red;
+      text-decoration: underline; }
+
+#footer .f_copyright {
+  height: 75px; }
+  #footer .f_copyright p {
+    text-align: center;
+    color: gray;
+    font-size: 12px; }
+
+/*# sourceMappingURL=reg.css.map */
